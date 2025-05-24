@@ -1,0 +1,35 @@
+﻿<Window x:Class="ExceptionHandlerDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExceptionHandlerDemo"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <WrapPanel>
+            <Button Margin="5"
+                    Height="40"
+                    Content="丢SampleException"
+                    Click="Button_Click1" />
+
+            <Button Margin="5"
+                    Height="40"
+                    Content="丢NotImplementedException"
+                    Click="Button_Click2" />
+
+            <Button Margin="5"
+                    Height="40"
+                    Background="Red"
+                    Content="丢NotImplementedException,注意这个不会被处理，程序或挂掉！！"
+                    Click="Button_Click3" />
+
+            <Button Margin="5"
+                    Height="40"
+                    Content="丢Sample222222222Exception"
+                    Click="Button_Click4" />
+        </WrapPanel>
+    </Grid>
+</Window>
